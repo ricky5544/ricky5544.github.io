@@ -1,0 +1,17 @@
+﻿html, body{
+    height:100%; margin:0; padding:0 }
+div { position:fixed; width:50%; height:50% }
+#NW { top:0;   left:0;   background:orange  }
+#NE { top:0;   left:50%; background:blue    }
+#SW { top:50%; left:0;   background:green   }
+#SE { top:50%; left:50%; background:red     }  
+    
+h3{
+    color:dodgerblue; 
+    font-size:30px;
+}
+h4{
+    color:dodgerblue; 
+    font-size:24px; 
+    padding-left:50px;
+}

@@ -1,17 +1,37 @@
 ﻿ body
 {
-    background-color:lightgrey;
+    background-color: rgb(181, 246, 252);
+    color: rgb(255, 255, 255);
 }
 p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
 }
 p.normal{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
+    color:black;
 }
 p.thick{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    color:black;
+}
+h1{
+    color:rgb(14, 89, 225);
+}
+h2{
+     color:rgb(14, 89, 225);
+     font-size:25pt;
+}
+h3{
+    color:rgb(14, 89, 225);
+}
+th{
+    color:black;
+}
+label{
+    color:black;
 }
  a:visited {
     background-color:darkblue;

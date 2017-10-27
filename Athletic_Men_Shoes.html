@@ -134,6 +134,16 @@
                 <a href="Contact_Us.html">Contact Us</a>
             </div>
         </div>
+
+        <div style="position: absolute; bottom: -300px;">
+            <script type="text/javascript">
+                document.write('<p class="thick">Today is: <span id="date-time">',
+                    new Date().toLocaleString(), '<\/span>.<\/p>')
+                if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+            </script>
+        </div>
     </div>
 </body>
 </html>

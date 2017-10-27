@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="contact_Us.js"></script>
     <title>Ricky's Shoe Shop</title>
     <meta name="description" content="HTML5 Template">
     <link rel="stylesheet" type="text/css" href="AssignmentStyleSheet.css" />
@@ -31,7 +32,7 @@
             </div>
         </div>
         <hr />
-        <form action="">
+        <form action="" method="get" name="user_info">
             <div class="row">
                 <div class="col-sm-6" style="padding-left:20px;">
                     <p class="thick">
@@ -43,20 +44,20 @@
                         <label for="user">
                             First Name:
                         </label>
-                        <input type="text" class="form-control" id="user" />
+                        <input type="text" class="form-control" id="user" required/>
                     </div>
                     <div class="col-sm-3; form-group">
                         <label for="user_last">
                             Last Name:
                         </label>
-                        <input type="text" class="form-control" id="user_last" />
+                        <input type="text" class="form-control" id="user_last" required />
                     </div>
 
                     <div class="col-sm-3; form-group">
                         <label for="user_email">
                             Email Address:
                         </label>
-                        <input type="text" class="form-control" id="user_email" />
+                        <input type="text" class="form-control" id="user_email" required />
                     </div>
 
                 </div>
@@ -80,7 +81,7 @@
                               placeholder="Please type your message here."></textarea>
                 </div>
                 <div class="col-sm-6">
-                    <button class="btn btn-primary btn-sm" type="submit">
+                    <button class="btn btn-primary btn-sm" type="submit" onclick="nameValidation(); emailValidation(); commentValidation();">
                         Submit
                     </button>
                     <button class="btn btn-primary btn-sm" type="reset">
@@ -90,6 +91,15 @@
             </div>
         </form>
 
+        <div>
+            <script type="text/javascript">
+                document.write('<p class="thick">Today is: <span id="date-time">',
+                    new Date().toLocaleString(), '<\/span>.<\/p>')
+                if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+            </script>
+        </div>
     </div>
 
     <br />

@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="contact_Us.js"></script>
+    <script src="NavBar.js"></script>
     <title>Ricky's Shoe Shop</title>
     <meta name="description" content="HTML5 Template">
     <link rel="stylesheet" type="text/css" href="AssignmentStyleSheet.css" />
@@ -15,15 +17,20 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2">
-                <h3> Ricky's Shoe Shop</h3> <br />
-            </div>
-            <div class="col-sm-2">
-                <h3>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </h3>
+            <div class="navbar">
+                <h1 style="padding-left:10px;">Ricky's Shoe Shop</h1>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction();">
+                        Mens
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Men_Shoes.html">Mens Casual Shoes</a>
+                        <a href="Athletic_Men_Shoes.html">Athletic Shoes</a>
+                    </div>
+                </div>
+                <a href="Contact_Us.html">Contact Us</a>
             </div>
         </div>
         <div class="row">
@@ -31,7 +38,7 @@
                 <h1>Contact Us</h1>
             </div>
         </div>
-        <hr />
+
         <form action="" method="get" name="user_info">
             <div class="row">
                 <div class="col-sm-6" style="padding-left:20px;">

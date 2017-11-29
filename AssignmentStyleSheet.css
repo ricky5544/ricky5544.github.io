@@ -4,7 +4,7 @@
     border-radius: 50%;
     opacity: 0.3; /* makes colors less bright by default */
     margin: 0 auto;
-    display: inline-block;
+    display:contents;
 }
 
 .stop {

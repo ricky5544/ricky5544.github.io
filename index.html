@@ -2,178 +2,32 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="AssignmentStyleSheet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="NavBar.js"></script>
-    <script src="SlideShow.js"></script>
-	<title>Ricky's Shoe Shop</title>
-
-	<meta name = "description" content="HTML5 Template">
+    <title>Ricky's Great Race</title>
+   <meta name="description" content="HTML5 Template">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="navbar">
-                <h1 style="padding-left:10px;">Ricky's Shoe Shop</h1>
-                <a href="index.html">Home</a>                         
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction();">
-                        Mens
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="Men_Shoes.html">Mens Casual Shoes</a>
-                        <a href="Athletic_Men_Shoes.html">Athletic Shoes</a>
-                    </div>
-                </div>  
-                <a href="Contact_Us.html">Contact Us</a>                  
-            </div>
-            <!--<div class="col-sm-5">
-                <h3> Ricky's Shoe Shop</h3> <br />
-                
-            </div>
-            <div class="col-sm-3">
-                <h3>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </h3>
-            </div>-->
+
+            <h2>Click the Lights</h2>
+
+            <div onclick="switchLight(0)" class="light stop on"></div>
+            <div onclick="switchLight(1)" class="light slow"></div>
+            <div onclick="switchLight(2)" class="light go"></div>
+
+
         </div>
 
-        <!--<div class="row">
-            <div class="slideshow-container" style="width:1000px; padding-left:300px;">
-                <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="adidas-tubular-doom-primeknit-triple-black-on-feet.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
-                </div>
 
-                <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="adidas-tubular-doom-primeknit-triple-black-on-feet.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="adidas-tubular-doom-primeknit-triple-black-on-feet.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="adidas-tubular-doom-primeknit-triple-black-on-feet.jpg" style="width:100%">
-                    <div class="text">Caption Four</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-
-
-
-
-
-
-
-
-        </div>-->
-     
-
-        <div class="row">
-            <div class="col-sm-6" style="padding-right:350px;">
-                <h4>
-                   <a href="Men_Shoes.html"> Mens Shoes</a>
-                </h4>
-                <div class="slideshow-container" style="width:500px;">
-                    <div class="mySlides" style="display:block;">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="adidas-tubular-doom-primeknit-triple-black-on-feet.jpg" style="width:100%">
-                        <div class="text">Black Tubular Adidas</div>
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="what-shoes-to-wear-with-jeans.jpg" style="width:100%;">
-                        <div class="text">Brown Leather Boots</div>
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="vans-old-skool-black-white-vd3hy28-1_3.jpg" style="width:100%">
-                        <div class="text">Black and White Vans</div>
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="janoski-max-dark-grey-black-631303-006-2.jpg" style="width:100%">
-                        <div class="text">All Black Janoski's</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-            </div>
-            <div class="col-sm-6" style="width:500px;">
-                <h4>
-                    <a href="index.html"> Womens Shoes</a>
-                </h4>
-                <a href="index.html">
-                    <img src="shop-fringe.jpg"
-                         alt="Womens Shoes" />
-                </a>
-                </div>
-            </div>
-        <br />
-        <div class="col-sm-5">
-            <p class="thick">
-                Welcome to The Ricky's Shoe Shop website!
-                <br /> We at Ricky's Shoe Shop value our customers
-                first and foremost and strive everyday to meet the ever changing demands of our
-                wonderful customers. <br /> Please take a look at our vast selection of shoes and don't hesitate
-                to email us with any inquiries.
-            </p>
-        </div>
-       
-        <div style="position: relative;background-color: blue;">
-
-            <div style="position: absolute; bottom: -300px; font-size:20pt">
-                <a style="color:lightseagreen;" href="Contact_Us.html">Contact Us</a>
-            </div>
-        </div>
-
-        <div style="position: absolute; bottom: -15px;" >
-            <script type="text/javascript">
-                document.write('<p class="thick">Today is: <span id="date-time">',
-                    new Date().toLocaleString(), '<\/span>.<\/p>')
-                if (document.getElementById) onload = function () {
-	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
-}
-            </script>
-        </div>
     </div>
-  
+
 
 </body>
 </html>

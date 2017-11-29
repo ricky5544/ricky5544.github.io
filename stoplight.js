@@ -1,3 +1,8 @@
+
+function init() {
+    resetShips();
+}
+
 /* This line gets all the HTML elements with class="light" and assigns them to a variable called LIGHTS. */
 var LIGHTS = document.getElementsByClassName("light");
 
@@ -99,4 +104,4 @@ function resetShips() {
     spaceship2Show.style.display = "none";
 }
 
-//window.onload = function () { init(); };
+window.onload = function () { init(); };

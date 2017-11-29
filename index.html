@@ -10,22 +10,42 @@
     <link rel="stylesheet" type="text/css" href="AssignmentStyleSheet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ricky's Great Race</title>
+    <script src="stoplight.js"></script>
    <meta name="description" content="HTML5 Template">
 </head>
-<body>
+<body background="57114ea21600002b0031bd7f.jpeg">
+    
     <div class="container-fluid">
         <div class="row">
 
-            <h2>Click the Lights</h2>
+            <h2>Click the green light to start</h2>
 
-            <div onclick="switchLight(0)" class="light stop on"></div>
+            <div id="stop" onclick="switchLight(0);" class="light stop on"></div>
             <div onclick="switchLight(1)" class="light slow"></div>
-            <div onclick="switchLight(2)" class="light go"></div>
-
-
+            <div onclick="switchLight(2);" class="light go"></div>
         </div>
 
 
+        <div class="row">
+            <p style="position:relative;"  id="spaceship" >
+                <img style="margin-left:170px;" src="spaceship1.jpg"/>
+            </p>
+
+            <p style="position:relative;" id="spaceship2" >
+                <img style="margin-left:170px; width:315px; height:160px;"src="spaceship2.jpg"/>
+            </p>
+
+            <p id="spaceship1_Win" style="display:none; color:black; font-size:15pt; font-weight:bold;">
+                White Spaceship wins!
+                <button onclick="switchLight(0);">Restart?</button>
+            </p>
+
+            <p id="spaceship2_Win" style="display:none; color:black; font-size:15pt; font-weight:bold;">
+                Blue Spaceship wins!
+                <button onclick="switchLight(0);">Restart?</button>
+            </p>
+
+        </div>
     </div>
 
 

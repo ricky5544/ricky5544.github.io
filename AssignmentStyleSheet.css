@@ -1,8 +1,8 @@
 ﻿.light {
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    opacity: 0.3; /* makes colors less bright by default */
+    opacity: 0.4; /* makes colors less bright by default */
     margin: 0 auto;
     display:contents;
 }
@@ -28,4 +28,8 @@ body {
     text-align: center;
     color: white;
     font-family: Helvetica;
+}
+
+.p{
+
 }
